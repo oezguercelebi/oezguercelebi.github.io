@@ -47,7 +47,7 @@ p {
 }
 
 .dot {
-  color: var(--accent);
+  color: var(--text);
 }
 
 .separator {
@@ -62,11 +62,11 @@ a {
 
 a:hover,
 a:focus-visible {
-  color: var(--accent);
+  color: var(--link);
 }
 
 a:focus-visible {
-  outline: 1px solid var(--accent);
+  outline: 1px solid var(--link);
   outline-offset: 3px;
 }
 
