@@ -111,7 +111,7 @@ small {
 .timeline li:not(:last-child)::after {
   position: absolute;
   top: 16px;
-  bottom: -16px;
+  bottom: -40px;
   left: 80px;
   width: 2px;
   background: repeating-linear-gradient(
