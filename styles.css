@@ -46,7 +46,6 @@ p {
   font-weight: 700;
 }
 
-.name span,
 .dot {
   color: var(--accent);
 }
@@ -112,10 +111,23 @@ small {
 .timeline li:not(:last-child)::after {
   position: absolute;
   top: 16px;
-  bottom: -20px;
+  bottom: -16px;
   left: 80px;
-  color: var(--muted);
-  content: "│";
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--text) 0,
+    var(--text) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  content: "";
+}
+
+.timeline .dot {
+  position: relative;
+  z-index: 1;
+  color: var(--text);
 }
 
 ::selection {
